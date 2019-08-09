@@ -84,7 +84,7 @@ async function load(button) {
         break;
       default:
         progress(9);
-        myYolo = await yolo.v3tiny();
+        myYolo = await yolo.v3tiny("https://raw.githubusercontent.com/miudit/tfjs-yolo/master/models/tfjs_models/yolov3-tf2-tiny/model.json");
     }
   }, 200);
 }
